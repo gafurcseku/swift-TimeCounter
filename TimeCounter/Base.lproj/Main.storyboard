@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,69 +24,41 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="countdown_timer" translatesAutoresizingMaskIntoConstraints="NO" id="IIM-lW-DCN">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYy-si-45R">
-                                <rect key="frame" x="70" y="337" width="274" height="63"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="53"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bx1-cK-MXa">
-                                <rect key="frame" x="105" y="425" width="205" height="100"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="slW-ll-vuh">
+                                <rect key="frame" x="74.333333333333314" y="336.66666666666669" width="265.33333333333337" height="62.666666666666629"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWb-gf-3Md">
-                                        <rect key="frame" x="103" y="5" width="90" height="90"/>
-                                        <state key="normal" title="Button" image="refresh"/>
-                                    </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cl8-wa-Lah">
-                                        <rect key="frame" x="5" y="5" width="80" height="90"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iy3-LA-b5s">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <state key="normal" title="Button" image="play"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iy6-jS-wVH">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <state key="normal" title="Button" image="pause"/>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="MQn-1h-jsF"/>
-                                        </constraints>
-                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYy-si-45R">
+                                        <rect key="frame" x="0.0" y="0.0" width="265.33333333333337" height="62.666666666666629"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="53"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Cl8-wa-Lah" secondAttribute="bottom" constant="5" id="07w-2n-fB6"/>
-                                    <constraint firstAttribute="height" constant="100" id="3L0-kh-s1S"/>
-                                    <constraint firstItem="Cl8-wa-Lah" firstAttribute="leading" secondItem="bx1-cK-MXa" secondAttribute="leading" constant="5" id="N2g-Ud-iYN"/>
-                                    <constraint firstItem="Cl8-wa-Lah" firstAttribute="top" secondItem="bx1-cK-MXa" secondAttribute="top" constant="5" id="PJM-83-7Nf"/>
-                                    <constraint firstAttribute="trailing" secondItem="yWb-gf-3Md" secondAttribute="trailing" constant="12" id="aMs-gT-f5P"/>
-                                    <constraint firstItem="yWb-gf-3Md" firstAttribute="height" secondItem="Cl8-wa-Lah" secondAttribute="height" id="dsw-LJ-aGg"/>
-                                    <constraint firstItem="yWb-gf-3Md" firstAttribute="leading" secondItem="Cl8-wa-Lah" secondAttribute="trailing" constant="18" id="hTe-As-Som"/>
-                                    <constraint firstItem="Cl8-wa-Lah" firstAttribute="centerY" secondItem="bx1-cK-MXa" secondAttribute="centerY" id="jLr-M8-Az0"/>
-                                    <constraint firstAttribute="width" constant="205" id="lJr-oN-Bl8"/>
-                                    <constraint firstItem="yWb-gf-3Md" firstAttribute="top" secondItem="bx1-cK-MXa" secondAttribute="top" constant="5" id="mLn-lm-vE3"/>
-                                    <constraint firstItem="yWb-gf-3Md" firstAttribute="centerY" secondItem="Cl8-wa-Lah" secondAttribute="centerY" id="op5-Ng-AS8"/>
-                                </constraints>
-                            </view>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wMI-yB-V5P">
+                                <rect key="frame" x="132" y="434.33333333333331" width="150" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9H-Zp-CIH">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <state key="normal" image="play"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n00-un-DfI">
+                                        <rect key="frame" x="90" y="0.0" width="60" height="60"/>
+                                        <state key="normal" image="referesh"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bx1-cK-MXa" firstAttribute="top" secondItem="FYy-si-45R" secondAttribute="bottom" constant="25" id="2GP-dM-aCW"/>
                             <constraint firstItem="IIM-lW-DCN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3jy-cC-let"/>
+                            <constraint firstItem="wMI-yB-V5P" firstAttribute="top" secondItem="FYy-si-45R" secondAttribute="bottom" constant="35" id="ETG-DQ-2Jo"/>
                             <constraint firstItem="IIM-lW-DCN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LKK-k6-Evb"/>
+                            <constraint firstItem="slW-ll-vuh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OWu-Fb-nbV"/>
                             <constraint firstAttribute="trailing" secondItem="IIM-lW-DCN" secondAttribute="trailing" id="Pr9-5R-OVf"/>
-                            <constraint firstItem="FYy-si-45R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="Wlg-nE-VkE"/>
-                            <constraint firstItem="bx1-cK-MXa" firstAttribute="centerX" secondItem="FYy-si-45R" secondAttribute="centerX" id="fm6-VU-YXs"/>
-                            <constraint firstItem="FYy-si-45R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gK1-hr-TBA"/>
-                            <constraint firstItem="FYy-si-45R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hs2-Ud-cC3"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IIM-lW-DCN" secondAttribute="bottom" id="j39-tf-Jkx"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="FYy-si-45R" secondAttribute="trailing" constant="50" id="xNt-FG-4ea"/>
+                            <constraint firstItem="wMI-yB-V5P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="js6-fc-Jyc"/>
+                            <constraint firstItem="slW-ll-vuh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uVx-qp-f67"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -98,8 +69,7 @@
     </scenes>
     <resources>
         <image name="countdown_timer" width="1922" height="1185"/>
-        <image name="pause" width="512" height="512"/>
-        <image name="play" width="512" height="512"/>
-        <image name="refresh" width="512" height="512"/>
+        <image name="play" width="60" height="60"/>
+        <image name="referesh" width="60" height="60"/>
     </resources>
 </document>
