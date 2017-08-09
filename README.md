@@ -1,4 +1,4 @@
-<h1> Swift and AutoLayout Count-up Timer<h1>
+<h1> Swift and AutoLayout Count-up Timer </h1>
 
 A Count-up Timer app is a great to start learing and developing a simple iOS application.
 
