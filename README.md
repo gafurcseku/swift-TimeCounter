@@ -7,7 +7,7 @@ A Count-up Timer app is a great to start learing and developing a simple iOS app
 1. Use AutoLayout to design screen and also use stackView to design layout.
 2. Design are support all device from iphone 5 to iphone 7. 
 
-<H2> Count-up App Screen Shot</H2>
+<h2> Count-up App Screen Shot</h2>
 
 <b>iPhone 7 Screen shot</b>
 
